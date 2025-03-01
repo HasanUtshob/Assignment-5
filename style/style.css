@@ -15,42 +15,14 @@
   );
 }
 
-.task {
-  grid-area: taskOne;
+/* .navber {
+  grid-area: navber;
 }
-.disco {
-  grid-area: taskTwo;
-}
-.time {
-  grid-area: taskThree;
-}
-.activity {
-  grid-area: taskfour;
-}
-.news_1 {
-  grid-area: newsOne;
-}
-.news_2 {
-  grid-area: newsTwo;
-}
-.news_3 {
-  grid-area: newsThree;
-}
-.news_4 {
-  grid-area: newsFour;
-}
-.news_5 {
-  grid-area: newsFive;
-}
-.news_6 {
-  grid-area: newsSix;
+.sidebar {
+  grid-area: sidebar;
 }
 
 .container {
   display: grid;
-  gap: 4px;
-  grid-template-areas:
-    "taskOne  taskTwo     taskThree   taskfour "
-    "newsOne  newsTwo     newsThree   taskfour"
-    "newsFour newsFive     newsSix    taskfour";
-}
+  grid-template-areas: "navber       navber          navber       sidebar   ";
+} */

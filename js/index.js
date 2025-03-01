@@ -48,7 +48,8 @@ myButton1.addEventListener("click", function () {
   let convertRemainingSumValue = parseInt(remaingSumValue.innerText);
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_1-heading");
-  const nowTime = new Date();
+  let nowTime = new Date();
+  nowTime.toLocaleTimeString("en-US", { hour12: true });
 
   disableButton.disabled = true;
   const subValue = convertRemainingSubValue - 1;
@@ -75,7 +76,8 @@ myButton2.addEventListener("click", function () {
   let convertRemainingSumValue = parseInt(remaingSumValue.innerText);
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_2-heading");
-  const nowTime = new Date();
+  let nowTime = new Date();
+  nowTime.toLocaleTimeString("en-US", { hour12: true });
 
   disableButton.disabled = true;
   const subValue = convertRemainingSubValue - 1;
@@ -102,7 +104,8 @@ myButton3.addEventListener("click", function () {
   let convertRemainingSumValue = parseInt(remaingSumValue.innerText);
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_3-heading");
-  const nowTime = new Date();
+  let nowTime = new Date();
+  nowTime.toLocaleTimeString("en-US", { hour12: true });
 
   disableButton.disabled = true;
   const subValue = convertRemainingSubValue - 1;
@@ -129,7 +132,9 @@ myButton4.addEventListener("click", function () {
   let convertRemainingSumValue = parseInt(remaingSumValue.innerText);
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_4-heading");
-  const nowTime = new Date();
+  let nowTime = new Date();
+  nowTime.toLocaleTimeString("en-US", { hour12: true });
+
   disableButton.disabled = true;
   const subValue = convertRemainingSubValue - 1;
   const sumValue = convertRemainingSumValue + 1;
@@ -155,7 +160,9 @@ myButton5.addEventListener("click", function () {
   let convertRemainingSumValue = parseInt(remaingSumValue.innerText);
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_5-heading");
-  const nowTime = new Date();
+  let nowTime = new Date();
+  nowTime.toLocaleTimeString("en-US", { hour12: true });
+
   disableButton.disabled = true;
   const subValue = convertRemainingSubValue - 1;
   const sumValue = convertRemainingSumValue + 1;
@@ -181,7 +188,9 @@ myButton6.addEventListener("click", function () {
   let convertRemainingSumValue = parseInt(remaingSumValue.innerText);
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_6-heading");
-  const nowTime = new Date();
+  let nowTime = new Date();
+  nowTime.toLocaleTimeString("en-US", { hour12: true });
+
   disableButton.disabled = true;
   let subValue = convertRemainingSubValue - 1;
   const sumValue = convertRemainingSumValue + 1;
