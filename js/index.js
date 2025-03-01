@@ -49,24 +49,23 @@ myButton1.addEventListener("click", function () {
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_1-heading");
   const nowTime = new Date();
-  if (disableButton.click) {
-    disableButton.disabled = true;
-    const subValue = convertRemainingSubValue - 1;
-    const sumValue = convertRemainingSumValue + 1;
-    remaingSumValue.innerText = sumValue;
-    remainingSubValue.innerText = subValue;
 
-    let p = document.createElement("p");
-    p.innerText = `
+  disableButton.disabled = true;
+  const subValue = convertRemainingSubValue - 1;
+  const sumValue = convertRemainingSumValue + 1;
+  remaingSumValue.innerText = sumValue;
+  remainingSubValue.innerText = subValue;
+
+  let p = document.createElement("p");
+  p.innerText = `
     
     You Have Completed the task ${
       h1.innerText
     } at ${nowTime.getHours()}:${nowTime.getMinutes()}:${nowTime.getSeconds()} 
     `;
-    historyShow.appendChild(p);
+  historyShow.appendChild(p);
 
-    alert("Board Update Successfull");
-  }
+  alert("Board Update Successfull");
 });
 myButton2.addEventListener("click", function () {
   let disableButton = document.getElementById("news_2-btn");
@@ -77,24 +76,23 @@ myButton2.addEventListener("click", function () {
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_2-heading");
   const nowTime = new Date();
-  if (disableButton.click) {
-    disableButton.disabled = true;
-    const subValue = convertRemainingSubValue - 1;
-    const sumValue = convertRemainingSumValue + 1;
-    remaingSumValue.innerText = sumValue;
-    remainingSubValue.innerText = subValue;
 
-    let p = document.createElement("p");
-    p.innerText = `
+  disableButton.disabled = true;
+  const subValue = convertRemainingSubValue - 1;
+  const sumValue = convertRemainingSumValue + 1;
+  remaingSumValue.innerText = sumValue;
+  remainingSubValue.innerText = subValue;
+
+  let p = document.createElement("p");
+  p.innerText = `
     
     You Have Completed the task ${
       h1.innerText
     } at ${nowTime.getHours()}:${nowTime.getMinutes()}:${nowTime.getSeconds()} 
     `;
-    historyShow.appendChild(p);
+  historyShow.appendChild(p);
 
-    alert("Board Update Successfull");
-  }
+  alert("Board Update Successfull");
 });
 myButton3.addEventListener("click", function () {
   let disableButton = document.getElementById("news_3-btn");
@@ -105,24 +103,23 @@ myButton3.addEventListener("click", function () {
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_3-heading");
   const nowTime = new Date();
-  if (disableButton.click) {
-    disableButton.disabled = true;
-    const subValue = convertRemainingSubValue - 1;
-    const sumValue = convertRemainingSumValue + 1;
-    remaingSumValue.innerText = sumValue;
-    remainingSubValue.innerText = subValue;
 
-    let p = document.createElement("p");
-    p.innerText = `
+  disableButton.disabled = true;
+  const subValue = convertRemainingSubValue - 1;
+  const sumValue = convertRemainingSumValue + 1;
+  remaingSumValue.innerText = sumValue;
+  remainingSubValue.innerText = subValue;
+
+  let p = document.createElement("p");
+  p.innerText = `
     
     You Have Completed the task ${
       h1.innerText
     } at ${nowTime.getHours()}:${nowTime.getMinutes()}:${nowTime.getSeconds()} 
     `;
-    historyShow.appendChild(p);
+  historyShow.appendChild(p);
 
-    alert("Board Update Successfull");
-  }
+  alert("Board Update Successfull");
 });
 myButton4.addEventListener("click", function () {
   let disableButton = document.getElementById("news_4-btn");
@@ -133,24 +130,22 @@ myButton4.addEventListener("click", function () {
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_4-heading");
   const nowTime = new Date();
-  if (disableButton.click) {
-    disableButton.disabled = true;
-    const subValue = convertRemainingSubValue - 1;
-    const sumValue = convertRemainingSumValue + 1;
-    remaingSumValue.innerText = sumValue;
-    remainingSubValue.innerText = subValue;
+  disableButton.disabled = true;
+  const subValue = convertRemainingSubValue - 1;
+  const sumValue = convertRemainingSumValue + 1;
+  remaingSumValue.innerText = sumValue;
+  remainingSubValue.innerText = subValue;
 
-    let p = document.createElement("p");
-    p.innerText = `
+  let p = document.createElement("p");
+  p.innerText = `
     
     You Have Completed the task ${
       h1.innerText
     } at ${nowTime.getHours()}:${nowTime.getMinutes()}:${nowTime.getSeconds()} 
     `;
-    historyShow.appendChild(p);
+  historyShow.appendChild(p);
 
-    alert("Board Update Successfull");
-  }
+  alert("Board Update Successfull");
 });
 myButton5.addEventListener("click", function () {
   let disableButton = document.getElementById("news_5-btn");
@@ -161,24 +156,22 @@ myButton5.addEventListener("click", function () {
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_5-heading");
   const nowTime = new Date();
-  if (disableButton.click) {
-    disableButton.disabled = true;
-    const subValue = convertRemainingSubValue - 1;
-    const sumValue = convertRemainingSumValue + 1;
-    remaingSumValue.innerText = sumValue;
-    remainingSubValue.innerText = subValue;
+  disableButton.disabled = true;
+  const subValue = convertRemainingSubValue - 1;
+  const sumValue = convertRemainingSumValue + 1;
+  remaingSumValue.innerText = sumValue;
+  remainingSubValue.innerText = subValue;
 
-    let p = document.createElement("p");
-    p.innerText = `
+  let p = document.createElement("p");
+  p.innerText = `
     
     You Have Completed the task ${
       h1.innerText
     } at ${nowTime.getHours()}:${nowTime.getMinutes()}:${nowTime.getSeconds()} 
     `;
-    historyShow.appendChild(p);
+  historyShow.appendChild(p);
 
-    alert("Board Update Successfull");
-  }
+  alert("Board Update Successfull");
 });
 myButton6.addEventListener("click", function () {
   let disableButton = document.getElementById("news_6-btn");
@@ -189,24 +182,22 @@ myButton6.addEventListener("click", function () {
   let historyShow = document.getElementById("history");
   let h1 = document.getElementById("news_6-heading");
   const nowTime = new Date();
-  if (disableButton.click) {
-    disableButton.disabled = true;
-    let subValue = convertRemainingSubValue - 1;
-    const sumValue = convertRemainingSumValue + 1;
-    remaingSumValue.innerText = sumValue;
-    remainingSubValue.innerText = subValue;
+  disableButton.disabled = true;
+  let subValue = convertRemainingSubValue - 1;
+  const sumValue = convertRemainingSumValue + 1;
+  remaingSumValue.innerText = sumValue;
+  remainingSubValue.innerText = subValue;
 
-    let p = document.createElement("p");
-    p.innerText = `
+  let p = document.createElement("p");
+  p.innerText = `
     
     You Have Completed the task ${
       h1.innerText
     } at ${nowTime.getHours()}:${nowTime.getMinutes()}:${nowTime.getSeconds()} 
     `;
-    historyShow.appendChild(p);
+  historyShow.appendChild(p);
 
-    alert("Board Update Successfull");
-  }
+  alert("Board Update Successfull");
 
   if (convertRemainingSubValue === 1) {
     alert("Congress !!! You have completed Current task");
