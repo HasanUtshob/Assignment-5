@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.disco {
+  background: linear-gradient(
+    92deg,
+    #3752fd 0.25%,
+    #6c7ffa 52.64%,
+    #9ba8f8 99.84%
+  );
+}
+
+.task {
+  grid-area: taskOne;
+}
+.disco {
+  grid-area: taskTwo;
+}
+.time {
+  grid-area: taskThree;
+}
+.activity {
+  grid-area: taskfour;
+}
+.news_1 {
+  grid-area: newsOne;
+}
+.news_2 {
+  grid-area: newsTwo;
+}
+.news_3 {
+  grid-area: newsThree;
+}
+.news_4 {
+  grid-area: newsFour;
+}
+.news_5 {
+  grid-area: newsFive;
+}
+.news_6 {
+  grid-area: newsSix;
+}
+
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-areas:
+    "taskOne  taskTwo     taskThree   taskfour "
+    "newsOne  newsTwo     newsThree   taskfour"
+    "newsFour newsFive     newsSix    taskfour";
+}

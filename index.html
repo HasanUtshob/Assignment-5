@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Meter</title>
+
+    <!-- Tailwind Css & Daisy Ui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS file added -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body id="body" class="poppins-regular">
+    <!-- headerPart Start -->
+    <header class="ml-[125px] mr-[125px] pt-[20px]">
+      <!-- navber start -->
+      <nav class="flex justify-between bg-slate-50 p-4 rounded-md">
+        <div class="flex items-center gap-1">
+          <img src="Image/logo.png" alt="" />
+          <p class="text-[30px]">Dev<span class="font-bold">Board</span></p>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-[32px]">
+            <img class="w-full" src="Image/checkbox.png" alt="" />
+          </div>
+
+          <h4 id="unseen-value" class="text-[24px] font-bold mr-[80px]">23</h4>
+          <img
+            class="btn rounded-full"
+            id="color-change-button"
+            src="Image/theme-btn.png"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="ml-[125px] mr-[125px] mt-[50px] pb-36">
+      <section class="container">
+        <div class="task box border rounded-md bg-slate-50">
+          <div class="flex items-center gap-5 mx-auto p-4">
+            <div>
+              <img class="w-[20px]" src="Image/checkbox.png" alt="" />
+            </div>
+            <div>
+              <p>Task Assigned</p>
+              <h5 id="seen-value" class="text-[24px] font-bold">06</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="disco rounded-md py-2 bg-slate-50">
+          <div class="flex items-center mx-auto w-[300px]">
+            <div class="w-[80px]">
+              <img class="w-full" src="Image/board.png" alt="" />
+            </div>
+            <h2 class="text-[20px] text-white">
+              Discover Something <br />
+              New Today!
+            </h2>
+          </div>
+        </div>
+
+        <div class="time box border rounded-md bg-slate-50">
+          <div class="flex items-center gap-5 p-4">
+            <div>
+              <img class="w-[20px]" src="Image/calender.png" alt="" />
+            </div>
+            <div>
+              <h3 id="day-name"></h3>
+              <h5 id="current-date"></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity box border rounded-md p-2 flex-1 bg-slate-50">
+          <div class="flex gap-2 justify-center">
+            <img class="w-20px" src="Image/activity.png" alt="" />
+            <h4>Activity Log</h4>
+          </div>
+          <div class="text-center">
+            <button id="clear-history-btn" class="btn btn-primary mt-3">
+              Clear History
+            </button>
+          </div>
+
+          <div id="history"></div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------ -->
+
+        <div class="news_1 box border rounded-md mt-7 p-2 bg-slate-50">
+          <div class="space-y-4 mb-4">
+            <p class="text-[#00303C] opacity-50">ShopEase</p>
+            <h2 id="news_1-heading" class="text-[24px] font-medium">
+              Fix Mobile Button Issue
+            </h2>
+            <p class="text-[#000000] opacity-50">
+              Debug using Chrome <br />
+              DevTools, check for overlappin
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <div>
+              <p>Deadline</p>
+              <h5>21 March 2025</h5>
+            </div>
+            <button id="news_1-btn" class="btn btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="news_2 box border rounded-md mt-7 p-2 bg-slate-50">
+          <div class="space-y-4 mb-4">
+            <p class="text-[#00303C] opacity-50">CloudSync</p>
+            <h2 id="news_2-heading" class="text-[24px] font-medium">
+              Add Dark Mode
+            </h2>
+            <p class="text-[#000000] opacity-50">
+              Debug using Chrome <br />
+              DevTools, check for overlappin
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <div>
+              <p>Deadline</p>
+              <h5>21 March 2025</h5>
+            </div>
+            <button id="news_2-btn" class="btn btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="news_3 box border rounded-md mt-7 p-2 bg-slate-50">
+          <div class="space-y-4 mb-4">
+            <p class="text-[#00303C] opacity-50">SwiftPay</p>
+            <h2 id="news_3-heading" class="text-[24px] font-medium">
+              Optimize Home page 
+            </h2>
+            <p class="text-[#000000] opacity-50">
+              Debug using Chrome <br />
+              DevTools, check for overlappin
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <div>
+              <p>Deadline</p>
+              <h5>21 March 2025</h5>
+            </div>
+            <button id="news_3-btn" class="btn btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="news_4 box border rounded-md mt-7 p-2 bg-slate-50">
+          <div class="space-y-4 mb-4">
+            <p class="text-[#00303C] opacity-50">Meta</p>
+            <h2 id="news_4-heading" class="text-[24px] font-medium">
+              Add new emoji 🤲
+            </h2>
+            <p class="text-[#000000] opacity-50">
+              Debug using Chrome <br />
+              DevTools, check for overlappin
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <div>
+              <p>Deadline</p>
+              <h5>21 March 2025</h5>
+            </div>
+            <button id="news_4-btn" class="btn btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="news_5 box border rounded-md mt-7 p-2 bg-slate-50">
+          <div class="space-y-4 mb-4">
+            <p class="text-[#00303C] opacity-50">Google LLC</p>
+            <h2 id="news_5-heading" class="text-[24px] font-medium">
+              Integrate OpenAI API
+            </h2>
+            <p class="text-[#000000] opacity-50">
+              Debug using Chrome <br />
+              DevTools, check for overlappin
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <div>
+              <p>Deadline</p>
+              <h5>21 March 2025</h5>
+            </div>
+            <button id="news_5-btn" class="btn btn-primary">Completed</button>
+          </div>
+        </div>
+
+        <div class="news_6 box border rounded-md mt-7 p-2 bg-slate-50">
+          <div class="space-y-4 mb-4">
+            <p class="text-[#00303C] opacity-50">Glassdoar</p>
+            <h2 id="news_6-heading" class="text-[24px] font-medium">
+              Improve Job searching
+            </h2>
+            <p class="text-[#000000] opacity-50">
+              Debug using Chrome <br />
+              DevTools, check for overlappin
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <div>
+              <p>Deadline</p>
+              <h5>21 March 2025</h5>
+            </div>
+            <button id="news_6-btn" class="btn btn-primary">Completed</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
