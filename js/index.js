@@ -221,3 +221,18 @@ clearHistory.addEventListener("click", function () {
   let historyClear = document.getElementById("history");
   historyClear.style.display = "none";
 });
+
+// rederection page start
+
+// document.getElementById("next-page").addEventListener("click", function () {
+//   window.location.href = "blog.html";
+// });
+
+// let previousPage = document.getElementById("back-btn");
+// previousPage.addEventListener("click", function () {
+//   window.location.href = "index.html";
+// });
+
+document.getElementById("next-page").addEventListener("click", function () {
+  window.location.href = "blog.html";
+});
