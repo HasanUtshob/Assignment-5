@@ -224,15 +224,6 @@ clearHistory.addEventListener("click", function () {
 
 // rederection page start
 
-// document.getElementById("next-page").addEventListener("click", function () {
-//   window.location.href = "blog.html";
-// });
-
-// let previousPage = document.getElementById("back-btn");
-// previousPage.addEventListener("click", function () {
-//   window.location.href = "index.html";
-// });
-
 document.getElementById("next-page").addEventListener("click", function () {
   window.location.href = "blog.html";
 });
