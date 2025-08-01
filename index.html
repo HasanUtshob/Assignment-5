@@ -4,31 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 5 | Task Meter</title>
-
-    <!-- daisyui & tailwindcss linkup -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body id="body">
-    <main class="container max-w-[1152px] mx-auto pb-10">
-      <header class="navber pt-4 mb-8 shadow-md rounded-md">
-        <div class="navbar bg-base-100 shadow-sm items-center">
-          <div class="flex-1">
-            <img class="w-[50px]" src="Image/logo.png" alt="" />
-            <a class="btn btn-ghost text-2xl font-bold">DevBoard</a>
+  <body id="body" class="poppins-regular">
+    <main class="max-w-screen-xl mx-auto w-full pb-10 px-2 md:px-6">
+      <header class="pt-4 mb-8 shadow-md rounded-md bg-white">
+        <div
+          class="navbar bg-base-100 shadow-sm items-center rounded-md flex flex-col md:flex-row gap-4"
+        >
+          <div class="flex-1 flex items-center gap-2">
+            <img class="w-[50px]" src="Image/logo.png" alt="Logo" />
+            <a class="btn btn-ghost text-xl md:text-2xl font-bold">DevBoard</a>
           </div>
-          <div class="flex-none gap-5 items-center">
-            <div class="flex gap-3">
+          <div class="flex-none flex gap-5 items-center">
+            <div class="flex gap-3 items-center">
               <img src="Image/checkbox.png" alt="" />
-              <h4 id="unseen-value" class="text-20px font-bold">20</h4>
+              <h4 id="unseen-value" class="text-base md:text-lg font-bold">
+                20
+              </h4>
             </div>
-
             <div
               id="color-change-button"
               class="box rounded-full border bg-slate-200 cursor-pointer"
@@ -38,9 +38,11 @@
           </div>
         </div>
       </header>
-      <section class="flex gap-4">
-        <main class="w-[860px]">
-          <section class="grid grid-cols-4 gap-6">
+      <section class="flex flex-col md:flex-row gap-4">
+        <!-- Main Content -->
+        <main class="w-full md:w-[860px]">
+          <!-- Stats Grid -->
+          <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <div class="task box border rounded-md bg-slate-50 shadow-md">
               <div class="flex items-center gap-5 mx-auto p-4">
                 <div>
@@ -48,46 +50,51 @@
                 </div>
                 <div>
                   <p>Task Assigned</p>
-                  <h5 id="seen-value" class="text-[24px] font-bold">06</h5>
+                  <h5 id="seen-value" class="text-lg md:text-[24px] font-bold">
+                    06
+                  </h5>
                 </div>
               </div>
             </div>
-
             <div
               id="next-page"
-              class="disco rounded-md py-2 bg-slate-50 cursor-pointer col-span-2 shadow-md"
+              class="disco rounded-md py-2 bg-slate-50 cursor-pointer col-span-1 sm:col-span-2 shadow-md flex items-center justify-center"
             >
-              <div class="flex items-center mx-auto">
-                <div class="w-[80px]">
+              <div class="flex flex-col sm:flex-row items-center w-full gap-3">
+                <div class="w-[60px] sm:w-[80px]">
                   <img class="w-full" src="Image/board.png" alt="" />
                 </div>
-                <h2 class="text-[20px] text-white">
-                  Discover Something <br />
-                  New Today!
+                <h2
+                  class="text-[18px] md:text-[20px] text-white text-center sm:text-left leading-tight"
+                >
+                  Discover Something <br />New Today!
                 </h2>
               </div>
             </div>
-
             <div class="time box border rounded-md bg-slate-50 shadow-md">
               <div class="flex items-center gap-5 p-4">
                 <div>
                   <img class="w-[20px]" src="Image/calender.png" alt="" />
                 </div>
                 <div>
-                  <h3 id="day-name"></h3>
-                  <h5 id="current-date"></h5>
+                  <h3 id="day-name" class="text-base"></h3>
+                  <h5 id="current-date" class="text-base"></h5>
                 </div>
               </div>
             </div>
           </section>
-
-          <section class="grid grid-cols-3 gap-4">
+          <!-- News Grid -->
+          <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Repeat news cards as before -->
             <div
               class="news_1 box border rounded-md mt-7 p-2 bg-slate-50 shadow-md"
             >
               <div class="space-y-4 mb-4">
                 <p class="text-[#00303C] opacity-50">ShopEase</p>
-                <h2 id="news_1-heading" class="text-[24px] font-medium">
+                <h2
+                  id="news_1-heading"
+                  class="text-lg md:text-[24px] font-medium"
+                >
                   Fix Mobile Button Issue
                 </h2>
                 <p class="text-[#000000] opacity-50">
@@ -96,23 +103,28 @@
                   size.
                 </p>
               </div>
-              <div class="flex gap-8">
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-8">
                 <div>
                   <p>Deadline</p>
                   <h5>21 March 2025</h5>
                 </div>
-                <button id="news_1-btn" class="btn btn-primary">
+                <button
+                  id="news_1-btn"
+                  class="btn btn-primary w-full sm:w-auto"
+                >
                   Completed
                 </button>
               </div>
             </div>
-
             <div
               class="news_2 box border rounded-md mt-7 p-2 bg-slate-50 shadow-md"
             >
               <div class="space-y-4 mb-4">
                 <p class="text-[#00303C] opacity-50">CloudSync</p>
-                <h2 id="news_2-heading" class="text-[24px] font-medium">
+                <h2
+                  id="news_2-heading"
+                  class="text-lg md:text-[24px] font-medium"
+                >
                   Add Dark Mode
                 </h2>
                 <p class="text-[#000000] opacity-50">
@@ -121,23 +133,28 @@
                   night-friendly design.
                 </p>
               </div>
-              <div class="flex gap-8">
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-8">
                 <div>
                   <p>Deadline</p>
                   <h5>21 March 2025</h5>
                 </div>
-                <button id="news_2-btn" class="btn btn-primary">
+                <button
+                  id="news_2-btn"
+                  class="btn btn-primary w-full sm:w-auto"
+                >
                   Completed
                 </button>
               </div>
             </div>
-
             <div
               class="news_3 box border rounded-md mt-7 p-2 bg-slate-50 shadow-md"
             >
               <div class="space-y-4 mb-4">
                 <p class="text-[#00303C] opacity-50">SwiftPay</p>
-                <h2 id="news_3-heading" class="text-[24px] font-medium">
+                <h2
+                  id="news_3-heading"
+                  class="text-lg md:text-[24px] font-medium"
+                >
                   Optimize Home page 
                 </h2>
                 <p class="text-[#000000] opacity-50">
@@ -145,23 +162,28 @@
                   images, minifying CSS/JS, using lazy loading.
                 </p>
               </div>
-              <div class="flex gap-8">
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-8">
                 <div>
                   <p>Deadline</p>
                   <h5>21 March 2025</h5>
                 </div>
-                <button id="news_3-btn" class="btn btn-primary">
+                <button
+                  id="news_3-btn"
+                  class="btn btn-primary w-full sm:w-auto"
+                >
                   Completed
                 </button>
               </div>
             </div>
-
             <div
               class="news_4 box border rounded-md mt-7 p-2 bg-slate-50 shadow-md"
             >
               <div class="space-y-4 mb-4">
                 <p class="text-[#00303C] opacity-50">Meta</p>
-                <h2 id="news_4-heading" class="text-[24px] font-medium">
+                <h2
+                  id="news_4-heading"
+                  class="text-lg md:text-[24px] font-medium"
+                >
                   Add new emoji 🤲
                 </h2>
                 <p class="text-[#000000] opacity-50">
@@ -170,23 +192,28 @@
                   interactions. 🌟✨
                 </p>
               </div>
-              <div class="flex gap-8">
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-8">
                 <div>
                   <p>Deadline</p>
                   <h5>21 March 2025</h5>
                 </div>
-                <button id="news_4-btn" class="btn btn-primary">
+                <button
+                  id="news_4-btn"
+                  class="btn btn-primary w-full sm:w-auto"
+                >
                   Completed
                 </button>
               </div>
             </div>
-
             <div
               class="news_5 box border rounded-md mt-7 p-2 bg-slate-50 shadow-md"
             >
               <div class="space-y-4 mb-4">
                 <p class="text-[#00303C] opacity-50">Google LLC</p>
-                <h2 id="news_5-heading" class="text-[24px] font-medium">
+                <h2
+                  id="news_5-heading"
+                  class="text-lg md:text-[24px] font-medium"
+                >
                   Integrate OpenAI API
                 </h2>
                 <p class="text-[#000000] opacity-50">
@@ -194,23 +221,28 @@
                   requests, handling responses, and displaying dynamic🚀
                 </p>
               </div>
-              <div class="flex gap-8">
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-8">
                 <div>
                   <p>Deadline</p>
                   <h5>21 March 2025</h5>
                 </div>
-                <button id="news_5-btn" class="btn btn-primary">
+                <button
+                  id="news_5-btn"
+                  class="btn btn-primary w-full sm:w-auto"
+                >
                   Completed
                 </button>
               </div>
             </div>
-
             <div
               class="news_6 box border rounded-md mt-7 p-2 bg-slate-50 shadow-md"
             >
               <div class="space-y-4 mb-4">
                 <p class="text-[#00303C] opacity-50">Glassdoar</p>
-                <h2 id="news_6-heading" class="text-[24px] font-medium">
+                <h2
+                  id="news_6-heading"
+                  class="text-lg md:text-[24px] font-medium"
+                >
                   Improve Job searching
                 </h2>
                 <p class="text-[#000000] opacity-50">
@@ -218,25 +250,28 @@
                   recommendations, real-time alerts, resume optimization,
                 </p>
               </div>
-              <div class="flex gap-8">
+              <div class="flex flex-col sm:flex-row gap-3 sm:gap-8">
                 <div>
                   <p>Deadline</p>
                   <h5>21 March 2025</h5>
                 </div>
-                <button id="news_6-btn" class="btn btn-primary">
+                <button
+                  id="news_6-btn"
+                  class="btn btn-primary w-full sm:w-auto"
+                >
                   Completed
                 </button>
               </div>
             </div>
           </section>
         </main>
-
-        <aside class="w-[274px] shadow-md">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-[274px] mt-6 md:mt-0 shadow-md">
           <div
             class="activity box border rounded-md p-2 bg-slate-50 shadow-md col-span-1"
           >
-            <div class="flex gap-2 justify-center">
-              <img class="w-20px" src="Image/activity.png" alt="" />
+            <div class="flex gap-2 justify-center items-center">
+              <img class="w-5" src="Image/activity.png" alt="" />
               <h4>Activity Log</h4>
             </div>
             <div class="text-center">
@@ -244,7 +279,6 @@
                 Clear History
               </button>
             </div>
-
             <div id="history"></div>
           </div>
         </aside>
